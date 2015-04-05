@@ -1,0 +1,311 @@
+/**
+ *
+ * @authors 熊洋 (xywindows@gmail.com)
+ * @date    2014-06-25 22:37:08
+ * @description 雇员
+ */
+var Entities = require('express-mvc').Entities,
+  entities;
+
+
+entities = module.exports = new Entities([{
+  code: '0001',
+  name: '岳灵珊',
+  postName: '主任',
+  dutyTime: '2001/1/1',
+  dutyState: false,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0002',
+  name: '郭靖',
+  postName: '行政',
+  dutyTime: '2002/1/1',
+  dutyState: true,
+  telephone: '123',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0003',
+  name: '黄蓉',
+  postName: '统计员',
+  dutyTime: '2003/1/1',
+  dutyState: true,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0004',
+  name: '欧阳锋',
+  postName: '销售员',
+  dutyTime: '2004/1/1',
+  dutyState: true,
+  telephone: '2222',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0005',
+  name: '封不平',
+  postName: '销售岗',
+  dutyTime: '2001/1/1',
+  dutyState: false,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+},{
+  code: '0006',
+  name: '天山童姥',
+  postName: '主任',
+  dutyTime: '2001/1/1',
+  dutyState: false,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0007',
+  name: '虚竹',
+  postName: '行政',
+  dutyTime: '2002/1/1',
+  dutyState: true,
+  telephone: '123',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0008',
+  name: '林平之',
+  postName: '统计员',
+  dutyTime: '2003/1/1',
+  dutyState: true,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0009',
+  name: '段誉',
+  postName: '销售员',
+  dutyTime: '2004/1/1',
+  dutyState: true,
+  telephone: '2222',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0010',
+  name: '张飞',
+  postName: '销售岗',
+  dutyTime: '2001/1/1',
+  dutyState: false,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+},{
+  code: '0011',
+  name: '赵云',
+  postName: '主任',
+  dutyTime: '2001/1/1',
+  dutyState: false,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0012',
+  name: '黄忠',
+  postName: '行政',
+  dutyTime: '2002/1/1',
+  dutyState: true,
+  telephone: '123',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0013',
+  name: '司马懿',
+  postName: '统计员',
+  dutyTime: '2003/1/1',
+  dutyState: true,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0014',
+  name: '曹操',
+  postName: '销售员',
+  dutyTime: '2004/1/1',
+  dutyState: true,
+  telephone: '2222',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0015',
+  name: '曹丕',
+  postName: '销售岗',
+  dutyTime: '2001/1/1',
+  dutyState: false,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+},{
+  code: '0016',
+  name: '曹仁',
+  postName: '主任',
+  dutyTime: '2001/1/1',
+  dutyState: false,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0017',
+  name: '曹冲',
+  postName: '行政',
+  dutyTime: '2002/1/1',
+  dutyState: true,
+  telephone: '123',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0018',
+  name: '周瑜',
+  postName: '统计员',
+  dutyTime: '2003/1/1',
+  dutyState: true,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0019',
+  name: '张良',
+  postName: '销售员',
+  dutyTime: '2004/1/1',
+  dutyState: true,
+  telephone: '2222',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0020',
+  name: '张筱雨',
+  postName: '销售岗',
+  dutyTime: '2001/1/1',
+  dutyState: false,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+},{
+  code: '0021',
+  name: '李秋水',
+  postName: '主任',
+  dutyTime: '2001/1/1',
+  dutyState: false,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0022',
+  name: '令狐冲',
+  postName: '行政',
+  dutyTime: '2002/1/1',
+  dutyState: true,
+  telephone: '123',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0023',
+  name: '令狐羽',
+  postName: '统计员',
+  dutyTime: '2003/1/1',
+  dutyState: true,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0024',
+  name: '任盈盈',
+  postName: '销售员',
+  dutyTime: '2004/1/1',
+  dutyState: true,
+  telephone: '2222',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0025',
+  name: '任我行',
+  postName: '销售岗',
+  dutyTime: '2001/1/1',
+  dutyState: false,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+},{
+  code: '0026',
+  name: '岳不群',
+  postName: '主任',
+  dutyTime: '2001/1/1',
+  dutyState: false,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0027',
+  name: '东方不败',
+  postName: '行政',
+  dutyTime: '2002/1/1',
+  dutyState: true,
+  telephone: '123',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0028',
+  name: '张三丰',
+  postName: '统计员',
+  dutyTime: '2003/1/1',
+  dutyState: true,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0029',
+  name: '张无忌',
+  postName: '销售员',
+  dutyTime: '2004/1/1',
+  dutyState: true,
+  telephone: '2222',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}, {
+  code: '0030',
+  name: '风清扬',
+  postName: '销售岗',
+  dutyTime: '2001/1/1',
+  dutyState: false,
+  telephone: '',
+  dataState: 'audited',
+  createOrg: '蓝海机械总公司',
+  useOrg: '蓝海机械总公司'
+}])

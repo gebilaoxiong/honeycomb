@@ -1,0 +1,135 @@
+/**
+ *
+ * @authors 熊洋 (xywindows@gmail.com)
+ * @date    2014-07-14 11:00:27
+ * @description
+ */
+define(function() {
+  return [{
+    id: 0,
+    dir: true,
+    title: '信用政策'
+  }, {
+    id: 1,
+    title: '信用检查规则',
+    module: 'Credit',
+    part: 'CreditCheckingRule',
+    view: 'List'
+  }, {
+    id: 2,
+    title: '信用检查规则列表',
+    module: 'Credit',
+    part: 'CreditCheckingRule',
+    view: 'List'
+  },{
+    id: 3,
+    dir: true,
+    title: '信用授予'
+  }, {
+    id: 4,
+    title: '信用档案',
+    module: 'Credit',
+    part: 'CreditFile',
+    view: 'List'
+  }, {
+    id: 5,
+    title: '信用档案列表',
+    module: 'Credit',
+    part: 'CreditFile',
+    view: 'List'
+  }, {
+    id: 6,
+    title: '信用特批权限',
+    module: 'Credit',
+    part: 'CreditSpecialAuthority',
+    view: 'List'
+  }, {
+    id: 7,
+    title: '信用特批权限列表',
+    module: 'Credit',
+    part: 'CreditSpecialAuthority',
+    view: 'List'
+  },{
+    id: 8,
+    dir: true,
+    title: '信用管理'
+  }, {
+    id: 9,
+    title: '信用初始化',
+    module: 'Credit',
+    part: 'CreditInitialize',
+    view: 'List'
+  }, {
+    id: 10,
+    title: '信用重算',
+    module: 'Credit',
+    part: 'CreditRecomputation',
+    view: 'List'
+  },{
+    id: 11,
+    dir: true,
+    title: '信用查询'
+  }, {
+    id: 12,
+    title: '信用状况查询',
+    module: 'Credit',
+    part: 'CreditStatus',
+    view: 'List'
+  }, {
+    id: 13,
+    title: '额外信息查询',
+    module: 'Credit',
+    part: 'CreditExtraInfo',
+    view: 'List'
+  },{
+    id: 14,
+    dir: true,
+    title: '信用评估'
+  }, {
+    id: 15,
+    title: '信用评估指标',
+    module: 'Credit',
+    part: 'CreditEvaluateIndicator',
+    view: 'List'
+  }, {
+    id: 16,
+    title: '信用等级方案',
+    module: 'Credit',
+    part: 'CreditRating',
+    view: 'List'
+  }, {
+    id: 17,
+    title: '信用评估模型',
+    module: 'Credit',
+    part: 'CreditEvaluationModel',
+    view: 'List'
+  }, {
+    id: 18,
+    title: '信用评估模型列表',
+    module: 'Credit',
+    part: 'CreditEvaluationModel',
+    view: 'List'
+  }, {
+    id: 19,
+    title: '创建信用评分表',
+    module: 'Credit',
+    part: 'CreditEvaluationGrade',
+    view: 'List'
+  }, {
+    id: 20,
+    title: '信用评分表列表',
+    module: 'Credit',
+    part: 'CreditEvaluationGrade',
+    view: 'List'
+  },{
+    id: 21,
+    dir: true,
+    title: '参数设置'
+  }, {
+    id: 22,
+    title: '信用管理系统参数',
+    module: 'Credit',
+    part: 'CreditSystemSetting',
+    view: 'List'
+  }]
+});
